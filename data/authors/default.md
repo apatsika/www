@@ -2,11 +2,6 @@
 name: Aubrey Patsika
 avatar: /static/images/profile.jpg
 occupation: Cloud Engineer
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
 ---
 
 Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
