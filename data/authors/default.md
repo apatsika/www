@@ -1,7 +1,7 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
+name: Aubrey Patsika
+avatar: /static/images/profile.jpg
+occupation: Cloud Engineer
 company: Stanford University
 email: address@yoursite.com
 twitter: https://twitter.com/Twitter

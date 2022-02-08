@@ -13,7 +13,7 @@ module.exports = {
         '9/16': '56.25%',
       },
       lineHeight: {
-        11: '2.75rem',
+        11: '2rem',
         12: '3rem',
         13: '3.25rem',
         14: '3.5rem',
