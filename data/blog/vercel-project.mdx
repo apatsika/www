@@ -7,14 +7,23 @@ draft: false
 summary: 'Learn more about my venture in Vercel. I have enjoyed working with the platform and developing this site'
 ---
 
-Welcome to my new Vercel blog which is built on the Next.js Framework. In this blog I will walk through my process of how I built my website including the engine that is running behind the scenes. I was able to to get up and running with Nextjs deployed on Vercel with ease.
+Welcome to my blog which is deployed on Vercel. Vercel are the authors of Nextjs which is a framework built on top of React. React is one of the most popular plaftforms to build user interfaces and many of the web interfaces that we interact with everyday including Facebook, Instagram and Netflix are built on top of the framework. In this blog I will share my experience of how I built my blog in Vercel and how I was able to get up and running with Nextjs with relative ease.
 
 ## Deployment
 
-Vercel provided everything I needed to deploy my blog. I have included some of the technologies that are powering my website in this section. It all started when I signed up for the free tier Hobby account, the rest is history ...
+My blog is fully managed and deployed through Vercel. It all started when I registered for a free Hobby account. Hobby Accounts are restricted to non-commercial or personal use. Vercel offers a 14 day trial Pro Teams account which allows you to invite up to 10 members on a team. They also have an Enterprise tier for larger organiztions. The Hobby account tier account was sufficient for this personal project.
+
+Vercel provided everything I needed to deploy my blog. I have included some of the technologies that are powering my website in this section.
 
 - ### `Git`
-    Creating a new project could not have been any easier, my website is deployed using Vercel for Github. You can either import a Git repository via the UI or deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog configured with the latest technologies out of the box. Alternatively, Vercel recommends using the `create-next-app` by running the following:
+    Creating a new project could not have been any easier. My blog is deployed using Vercel for Git. I had the choice of importing a project from a Git repository or deploying a new project by cloning one of the curated selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog provides a rich feature set as a baseline for my blog including:
+
+    - MDX for writing JXS in markdown documents
+    - Light and Dark Theme
+    - Lightweight, 45kB first load JS, uses Preact in production build
+    - Support for Giscus
+    
+    Alternatively, Vercel recommends using the `create-next-app` by running the following:
 
     ```
     npx create-next-app@latest
@@ -22,7 +31,7 @@ Vercel provided everything I needed to deploy my blog. I have included some of t
     yarn create next-app
     ```
     
-    Vercel automatically deployed my project on Github a repo, which I cloned for development on `localhost:3000`. Next, all it took was `git push` to my `main` branch and Vercel was able to build and deploy any changes I have made and initiate a **production deployment**.
+    Vercel deployed my project on a Git a repo which I cloned for development on `localhost:3000`. Any changes I pushed to Git `git push` where automatically deployed in my production node in Vercel.
 
 ![Production Deployment](/static/images/production.png)
 
@@ -58,15 +67,17 @@ This is possibly my favorite feature of the Vercel which I have been using to ch
 
 ## Domains
 
-Vercel provides a domain that points to the `vercel.app` by default. I configured a custom domain for my website for a domain I purchased through Godaddy. The domain panel makes it easy to add a new domain by typing the URL of the domain name. I was given the directions to update the DNS records in Godaddy. The domain points to my production environment in Vercel.
+Vercel provides a domain that points to the `vercel.app` by default. I configured my website to use a custom domain that is hosted in Godaddy. The domain panel makes it easy to add a new domain by typing the URL of the domain. I was given the directions to update the DNS records in Godaddy. The domain points to my production environment in Vercel.
 
 ![Giscus Environment Variables](/static/images/domain.png)
 
 ## Security
 
-Security is not an afterthought in Vercel. The free tier Hobby account offers Log and Source protection as well as Git Fork Protection. Log and Source protection hides the `_src` and `_logs` path by default. These paths are only accessible to me or to members that I have added as users to my team in the Vercel panel. Git Fork protection prevents the leaking of sensitive project information by requiring authorization to deploy a pull request. I will not touch on the other features since they require an upgrade form the Hobby account. 
+Security is not an afterthought in Vercel. The free tier Hobby account offers Log and Source protection as well as Git Fork Protection. Log and Source protection hides the `_src` and `_logs` path by default. These paths are only accessible to me in the Vercel panel. Git Fork protection prevents the leaking of sensitive project information by requiring authorization to deploy a pull request. I will not touch on the other features since they require an upgrade form the Hobby account. 
 
-Additionally, all network traffic is encrypted by default at no additional cost. Vercel issues free SSL certificates using a non profit plaftorm called **Let's Encrypt**. You can find more on this topic here: https://vercel.com/blog/automatic-ssl-with-vercel-lets-encrypt
+Additionally, all network traffic is encrypted by default at no additional cost. Vercel issues free SSL certificates using a non profit plaftorm called **Let's Encrypt**. You can find more at this blog: [Automatic SSL with Vercel and Let's Encrypt](https://vercel.com/blog/automatic-ssl-with-vercel-lets-encrypt)
+
+## Final thoughts
 
 
 
