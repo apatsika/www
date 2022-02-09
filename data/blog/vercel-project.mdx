@@ -9,26 +9,29 @@ summary: 'Learn more about my venture in Vercel. I have enjoyed working with the
 
 Welcome to my new Vercel blog which is built on the Next.js Framework. In this blog I will walk through my process of how I built my website including the engine that is running behind the scenes. I was able to to get up and running with Nextjs deployed on Vercel with ease.
 
-## Git integration
+## Deployment
 
-Creating a new project could not have been any easier, my website is deployed using Vercel for Github.  You can either import a Git repository via the UI or deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog configured with the latest technologies out of the box. Vercel automatically deployed my project on Github a repo, which I cloned for development on `localhost:3000`. Next, all it took was `git push` to deploy. The rest was magic.
+- ## `Git`
+    Creating a new project could not have been any easier, my website is deployed using Vercel for Github.  You can either import a Git repository via the UI or deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog configured with the latest technologies out of the box. Alternatively, Vercel recommends using the `create-next-app` by running the following:
 
-Alternatively, Vercel recommends using the `create-next-app` by running the following:
+    ```
+    npx create-next-app@latest
+    # or
+    yarn create next-app
+    ```
+    
+    Vercel automatically deployed my project on Github a repo, which I cloned for development on `localhost:3000`. Next, all it took was `git push` to my `main` branch and Vercel was able to build and deploy any changes I have made and initiate a **production deployment**.
 
-```
-npx create-next-app@latest
-# or
-yarn create next-app
-```
+![Production Deployment](/static/images/production.png)
 
-## MDX Markdown
+- ## `next/image`
 
-The blog is powered by MDX which is a authoring format thay lets you compose JSX in Markdown. I have heavily relied on content managements systems like WordPress and Craft to power my personal blog in the past. I think MDX Markdown is perfect for a small project like this. Markdown gives me greater flexibility in terms of managing blog pages, I found it easier to manipulate posts using Visual Studio Code. Managing posts with MDX will not be everyones cup of tea, especially for non-technical audience since it requires some basic coding to manipulate pages. However for a personal blog project, it's in my opinion just perfect.
+- ## `MDX`
+    The blog is powered by MDX which is a authoring format thay lets you compose JSX in Markdown. I have heavily relied on content managements systems like WordPress and Craft to power my personal blog in the past. I think MDX Markdown is perfect for a small project like this. Markdown gives me greater flexibility in terms of managing blog pages, I found it easier to manipulate posts using Visual Studio Code. Managing posts with MDX will not be everyones cup of tea, especially for non-technical audience since it requires some basic coding to manipulate pages. However for a personal blog project, it's in my opinion just perfect.
 
-## Giscus Comments
-
-Giscus powers by Github Discussions lets visitors comment and react to my blog post. When giscus loads, the GitHub Discussions search API is used to find the Discussion associated with the page based on a chosen mapping (URL, `pathname`, `<title>`, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction. I was able to set the environment variables in Vercel under `Settings > Environment Variables`. 
-
+- ## `Giscus`
+    The comments section is powered by Giscus which lets visitors comment and react to my blog post. Giscus is powered by Github discussiosn, when giscus loads, the GitHub Discussions search API is used to find the Discussion associated with the page based on a chosen mapping (`URL`, `pathname`, `<title>`, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction. I was able to set the environment variables in Vercel under `Settings > Environment Variables`. 
+    
 ![Giscus Environment Variables](/static/images/environment.png)
 
 
