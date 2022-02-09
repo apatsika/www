@@ -15,25 +15,24 @@ git commit -m ""
 git push -u origin master
 ```
 
-## Deployment
-
-#### Git
+## Git
 
 My website is deployed using Vercel for Github. Creating a new project could not have been any easier! You can import a Git repository via the UI / deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog) which is configured with the latest technologies out of the box. Vercel automatically deployed my project in Github via the UI. The integration with Github is seamless. I spent some time customizing the template on my local server at http://localhost:3000. Once I was satified all it took was `git push` to deploy. The rest was magic.
 
-#### MDX Markdown
+## MDX Markdown
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+The blog is powered by MDX which is a authoring format thay lets you compose JSX in Markdown. I have heavily relied on content managements systems like WordPress and Craft to power my personal blog in the past. However, I have to say that I have enjoyed working with Markdown since it gives me greater flexibility in terms of managing blog pages. It has streamlined how I manage blog pages, I have found that I am able to edit content faster using Markdown.
 
-#### Giscus Comments
+## Giscus Comments
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+Giscus powers by Github Discussions lets visitors comment and react to my blog post. When giscus loads, the GitHub Discussions search API is used to find the Discussion associated with the page based on a chosen mapping (URL, `pathname`, `<title>`, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction.
 
-#### Domains
+
+## Domains
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-#### Analytics
+## Analytics
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
