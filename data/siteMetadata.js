@@ -11,7 +11,7 @@ const siteMetadata = {
   image: '/static/images/profile.jpg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'apatsika@gmail.com',
-  github: 'https://github.com/apatsika',
+  github: 'https://github.com/apatsika/www',
   twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
