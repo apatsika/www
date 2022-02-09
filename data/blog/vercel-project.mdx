@@ -11,8 +11,10 @@ Welcome to my new Vercel blog which is built on the Next.js Framework. In this b
 
 ## Deployment
 
-- ## `Git`
-    Creating a new project could not have been any easier, my website is deployed using Vercel for Github.  You can either import a Git repository via the UI or deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog configured with the latest technologies out of the box. Alternatively, Vercel recommends using the `create-next-app` by running the following:
+Vercel provided everything I needed to deploy my blog. I have included some of the technologies that are powering my website in this section. It all started when I signed up for the free tier Hobby account, the rest is history ...
+
+- ### `Git`
+    Creating a new project could not have been any easier, my website is deployed using Vercel for Github. You can either import a Git repository via the UI or deploy by cloning one of the templates selection of templates. I chose to deploy [the Tailwind Nextjs Starter Blog](https://tailwind-nextjs-starter-blog.vercel.app/blog/introducing-tailwind-nextjs-starter-blog). The Tailwind Next Starter blog configured with the latest technologies out of the box. Alternatively, Vercel recommends using the `create-next-app` by running the following:
 
     ```
     npx create-next-app@latest
@@ -24,16 +26,29 @@ Welcome to my new Vercel blog which is built on the Next.js Framework. In this b
 
 ![Production Deployment](/static/images/production.png)
 
-- ## `next/image`
+- ### `MDX`
+    The blog is powered by MDX which is a authoring format thay lets you compose JSX in Markdown. I have heavily relied on content managements systems like WordPress and Craft to power my personal web projects in the past. I was surpised how easy it was to work with MDX. Markdown gives me greater flexibility in terms of managing blog posts; I found it easier to manipulate posts using Visual Studio Code. For sure this way of managing posts will not be everyones cup of tea, especially for non-technical audience since it requires some basic coding to manipulate pages. However, in my opinion working with MDX is just perfect.
 
-- ## `MDX`
-    The blog is powered by MDX which is a authoring format thay lets you compose JSX in Markdown. I have heavily relied on content managements systems like WordPress and Craft to power my personal blog in the past. I think MDX Markdown is perfect for a small project like this. Markdown gives me greater flexibility in terms of managing blog pages, I found it easier to manipulate posts using Visual Studio Code. Managing posts with MDX will not be everyones cup of tea, especially for non-technical audience since it requires some basic coding to manipulate pages. However for a personal blog project, it's in my opinion just perfect.
-
-- ## `Giscus`
-    The comments section is powered by Giscus which lets visitors comment and react to my blog post. Giscus is powered by Github discussiosn, when giscus loads, the GitHub Discussions search API is used to find the Discussion associated with the page based on a chosen mapping (`URL`, `pathname`, `<title>`, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction. I was able to set the environment variables in Vercel under `Settings > Environment Variables`. 
+- ### `Giscus`
+    The comments section is powered by Giscus which lets visitors comment and react to my blog posts. Giscus is powered by Github Discussions. Giscus uses the GitHub Discussions search API to find the Discussion associated with each post based on a chosen mapping (`URL`, `pathname`, `<title>`, etc.). If a matching discussion cannot be found, the giscus bot will automatically create a discussion the first time someone leaves a comment or reaction. I was able to set the environment variables in Vercel under `Settings > Environment Variables`. 
     
 ![Giscus Environment Variables](/static/images/environment.png)
 
+## Optimization
+
+HubSpot defines web optimization as follows:
+   > Put simply, web optimization is anything that helps your site get noticed by search engines. This starts with content that appeals to automated search engine “spiders” — pieces of code that comb the web for relevant, keyword-driven content.
+
+This sounds simple but web optimization is such a complex topic with various tooling required. Nextjs provides out of the box optimization as a baseline, it is not an afterthought. Below I have called out a few of the many optimization functions that I have leveraged for my blog:
+
+- ### `next/image`
+    Nextjs optimizes images using a built-in next component `next/image`. This can serve images in next-generation formats (like WebP) and avoid loading larger images in smaller viewports. Other benefits include:
+
+- ### `next/link`
+    My blog leverages client side navigation using the `next/link` library. Client side rendering enables faster load time of web pages. 
+
+- ### `next/script`
+    The Next.js Script component, `next/script`, is an extension of the HTML `<script>` element. It enables developers to set the loading priority of third-party scripts anywhere in their application without needing to append directly to next/head, saving developer time while improving loading performance.
 
 ## Domains
 
