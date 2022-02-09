@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: 'Aubrey Patsika',
   author: 'Aubrey Patsika',
-  headerTitle: 'Aubrey Patsika',
+  headerTitle: '@jangili',
   description: 'Aubrey Patsika Photography Blog',
   language: 'en-us',
   theme: 'system', // system, dark or light
