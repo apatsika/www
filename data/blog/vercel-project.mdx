@@ -11,7 +11,7 @@ Welcome to my blog which is deployed on Vercel. Vercel are the authors of Nextjs
 
 ## Deployment
 
-My blog is fully managed and deployed through Vercel. It all started when I registered for a free Hobby account. Hobby Accounts are restricted to non-commercial or personal use. Vercel offers a 14 day trial Pro Teams account which allows you to invite up to 10 members on a team. They also have an Enterprise tier for larger organiztions. The Hobby account tier account was sufficient for this personal project.
+My blog is fully managed and deployed through Vercel. It all started when I registered for a free Hobby account. Hobby Accounts are restricted to non-commercial or personal use. Vercel offers a 14 day trial Pro Teams account which allows you to invite up to 10 members on a team. They also have an Enterprise tier for larger organizations. The Hobby account tier account was sufficient for this personal project.
 
 Vercel provided everything I needed to deploy my blog. I have included some of the technologies that are powering my website in this section.
 
@@ -22,16 +22,16 @@ Vercel provided everything I needed to deploy my blog. I have included some of t
     - Light and Dark Theme
     - Lightweight, 45kB first load JS, uses Preact in production build
     - Support for Giscus
+
+    I did most of my development on my local machine where I ran `npm run dev` to deploy a local server on  `http://localhost:3000`. Any changes I pushed to my `main` branch in Git via `git push` where automatically deployed in my production node in Vercel.
     
-    Alternatively, Vercel recommends using the `create-next-app` by running the following:
+    Alternatively, Vercel recommends using the `create-next-app` to deploy a new app by running the following:
 
     ```
     npx create-next-app@latest
     # or
     yarn create next-app
     ```
-    
-    Vercel deployed my project on a Git a repo which I cloned for development on `localhost:3000`. Any changes I pushed to Git `git push` where automatically deployed in my production node in Vercel.
 
 ![Production Deployment](/static/images/production.png)
 
